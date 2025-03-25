@@ -16,8 +16,8 @@ public class Second {
     @Test
     public void m1() throws Throwable {
         try {
-            service = AppiumDriverLocalService.buildDefaultService();
-        service.start();
+          /*  service = AppiumDriverLocalService.buildDefaultService();
+        service.start();*/
 
             UiAutomator2Options options = new UiAutomator2Options()
                     .setUdid("7a8ad89d6224")
@@ -39,7 +39,7 @@ public class Second {
 
         }
         finally {
-            service.stop();
+            //service.stop();
         }
 
     }
